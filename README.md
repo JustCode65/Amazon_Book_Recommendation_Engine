@@ -1,4 +1,4 @@
-# Smart Book Recommendations via Bayesian Networks - Milestone Report
+# Smart Book Recommendations via Bayesian Networks - Milestone Report (finished in 2025)
 
 ## Dataset Description
 
