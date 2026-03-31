@@ -4,6 +4,8 @@
 
 The Amazon Books Reviews dataset represents one of the largest publicly available collections of book reviews, containing approximately 3 million reviews spanning 18 years (1995-2013). The dataset consists of two primary files: Books_rating.csv (3GB) containing user reviews and ratings, and books_data.csv containing book metadata.
 
+## Note: Amazon data can be found here https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews/data. The data itself is too big to post on my github.
+
 ### Dataset Size and Processing Feasibility
 
 The dataset totals approximately 3GB in size, with 2,999,992 reviews from 1,008,972 unique users covering 221,998 distinct books. While this size presents computational challenges for single-machine processing, it remains reasonably processable with proper engineering. Our chunk-based processing approach (100,000 rows at a time) keeps memory usage under 8GB RAM, making it feasible for modern consumer hardware. Processing the full dataset takes approximately 45 minutes on a standard machine, or 15 minutes with our parallel implementation using multi-core processing. For rapid prototyping, we implemented stratified sampling to work with smaller subsets while maintaining rating distributions.
